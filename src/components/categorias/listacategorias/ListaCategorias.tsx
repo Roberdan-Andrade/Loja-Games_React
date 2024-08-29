@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import CardCategorias from "../cardcategorias/CardCategorias";
 import Categoria from "../../../models/Categoria";
 import { buscar } from "../../../services/Service";
-import { DNA } from "react-loader-spinner";
+import { Triangle } from "react-loader-spinner";
 
 function ListaCategorias() {
    const [categorias, setCategorias] = useState<Categoria[]>([]);
@@ -22,15 +22,19 @@ function ListaCategorias() {
    return (
       <>
          {categorias.length === 0 && (
-            <DNA
+            <Triangle
                visible={true}
-               height="200"
-               width="100%"
-               ariaLabel="dna-loading"
+               height="20%"
+               width="20%"
+               color="#404040"
+               ariaLabel="triangle-loading"
                wrapperStyle={{
                   'background-color': '#ef4444',
+                  'display': 'flex',
+                  'justify-content': 'center',
+                  'padding-top': '20vh'
                }}
-               wrapperClass="dna-wrapper mx-auto"
+               wrapperClass=""
             />
          )}
 
