@@ -19,7 +19,7 @@ function App() {
                   <Route path="/Categorias" element={<ListaCategorias />}/>
                   <Route path="/CadastroCategoria" element={<FormularioCategoria />}/>
                   <Route path="/EditarCategoria/:id" element={<FormularioCategoria />}/>
-                  <Route path="/DeletarCategoria" element={<DeletarCategoria />}/>
+                  <Route path="/DeletarCategoria/:id" element={<DeletarCategoria />}/>
                </Routes>
             </div>
             <Footer />
