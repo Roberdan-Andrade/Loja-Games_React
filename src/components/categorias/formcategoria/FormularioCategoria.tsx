@@ -1,8 +1,8 @@
 function FormularioCategoria() {
 
    return (
-      <div className="container flex flex-col items-center justify-center mx-auto">
-         <h1 className="text-4xl text-center my-8">
+      <div className="flex flex-col items-center justify-center bg-red-500 min-h-[80vh]">
+         <h1 className="text-5xl text-center font-medium py-4">
             Cadastrar Categoria
          </h1>
 
@@ -18,7 +18,7 @@ function FormularioCategoria() {
                />
             </div>
             <button
-               className="rounded text-slate-100 bg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block"
+               className="rounded text-slate-100 bg-indigo-400 hover:bg-indigo-800 w-1/2 py-4 mx-auto mb-16 block"
                type="submit"
             >
                Cadastrar
