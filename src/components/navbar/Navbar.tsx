@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 
 function Navbar() {
 
-
     return (
         <>
             <div className='w-full flex justify-center py-6 bg-neutral-700 text-white'>
